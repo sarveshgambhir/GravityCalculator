@@ -5,19 +5,18 @@ import java.io.*;
 class GravityCalculator 
 {
 	public static void main(String[] arguments) {
-        double massOfObject = 5; //INSERT VALUE HERE
+                double massOfObject = 5; //INSERT VALUE HERE
  		double gravitationalConstant = 6.67408 * Math.pow(10,-11);
 		double massOfEarth = 5.972 * Math.pow(10, 24);
-        double distanceToTheCenterOfTheEarth =  6371000;
+                double distanceToTheCenterOfTheEarth =  6371000;
 		double heightOfObjectAboveGround = 500; //INSERT VALUE HERE
 		double distance = heightOfObjectAboveGround + distanceToTheCenterOfTheEarth;
-        double forceOfGravity = (massOfObject * massOfEarth * gravitationalConstant)/Math.pow(distance, 2);
-        double initialVelocity = 0.0; //INSERT VALUE HERE
+                double forceOfGravity = (massOfObject * massOfEarth * gravitationalConstant)/Math.pow(distance, 2);
+                double initialVelocity = 0.0; //INSERT VALUE HERE
 		double fallingTime = 10.0; //INSERT VALUE HERE
 		double initialPosition = 0.0; //INSERT VALUE HERE
 		double distanceTravelled = 0.5 * forceOfGravity *fallingTime * fallingTime + initialVelocity * fallingTime ;
 		double finalPosition = initialPosition + distanceTravelled;
- 			System.out.println("The object's position after " + fallingTime +
-" seconds is " + finalPosition + " m and it's distance travelled is "  +  distanceTravelled + "m");
+                System.out.println("The object's position after " + fallingTime + " seconds is " + finalPosition + " m and it's distance travelled is "  +  distanceTravelled + "m");
 	}
 }
